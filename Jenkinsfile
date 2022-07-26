@@ -149,6 +149,7 @@ pipeline {
                                                                   echo "Change set registration for ${changeSetId}"
                                                                   changeSetRegResult = snDevOpsConfigRegisterPipeline(changesetNumber:"${changeSetId}")
                                                                   echo "change set registration set result ${changeSetRegResult}"
+								  sleep(20);
                                                             }
                                                       } else {
                                                             error "Change set was not created"

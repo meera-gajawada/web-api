@@ -10,6 +10,7 @@
 		"applePay": "disabled",
 		"googlePay" : "enabled",
 		"googlePayGatewayUrl" : "dev.pay.google.com",
+		"googleRefIdNumber" : "grefId123",
 		"creditcards.cacf.type.ids": "43,44,45,46",
 		"creditcards.oney.type.ids": "33,34,35,36",
 		"dbConnectionString": "@@paymentService/database/dbUserName@@:@@paymentService/database/dbPassword@@ @@paymentService/database/dbServer@@:@@paymentService/database/dbPort@@ @@paymentService/database/dbName@@",

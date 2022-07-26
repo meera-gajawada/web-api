@@ -69,7 +69,13 @@ pipeline {
                               isSnapshotCreated=false
                               isSnapshotValidateionRequired=false
                               isSnapshotPublisingRequired=false
+                              
+                              /**
+                              * Replace always a change
+                              **/
 
+                              refChange="grefId123"
+                              replaceRefChange = ${refChange}${BUILD_NUMBER};
 
                               /**
                               * Checking for parameters
@@ -154,7 +160,7 @@ pipeline {
                         sh "echo ${WORKSPACE}/**.*"
                         script{
                               workspaceConfigFilePath = "${WORKSPACE}/${configFilePath}"
-                              sh "sed -i 's/dbPassword11111111/dbPassword11111111$BUILD_NUMBER/g' ${configFilePath}"
+                              sh "sed -i 's/${refChange}/${replaceRefChange}/g' ${configFilePath}"
                               echo "\n --- Printing config file from relative path ${configFilePath}"
                               sh "cat ${configFilePath} "
                               echo "\n --- Printing config file from workspace ${workspaceConfigFilePath}"

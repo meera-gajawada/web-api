@@ -75,7 +75,7 @@ pipeline {
                               **/
 
                               refChange="grefId123"
-                              replaceRefChange = ${refChange}${BUILD_NUMBER};
+                              replaceRefChange = "${refChange}${BUILD_NUMBER}";
 
                               /**
                               * Checking for parameters

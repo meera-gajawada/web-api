@@ -107,6 +107,10 @@ pipeline {
                                     if(params.exporterArgs){
                                           exporterArgs = params.exporterArgs
                                     } 
+                                    if(params.refChange){
+                                          refChange = params.refChange;
+                                          replaceRefChange = ${refChange}${BUILD_NUMBER};
+                                    }
 
                               }
 

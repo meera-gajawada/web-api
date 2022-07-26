@@ -154,6 +154,7 @@ pipeline {
                         sh "echo ${WORKSPACE}/**.*"
                         script{
                               workspaceConfigFilePath = "${WORKSPACE}/${configFilePath}"
+                              sh "sed -i 's/dbPassword11111111/dbPassword11111111$BUILD_NUMBER/g' ${configFilePath}"
                               echo "\n --- Printing config file from relative path ${configFilePath}"
                               sh "cat ${configFilePath} "
                               echo "\n --- Printing config file from workspace ${workspaceConfigFilePath}"

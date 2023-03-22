@@ -4,7 +4,7 @@ mongo:
   dbport : 27018
   dbUrl: "https://awesome.uswest1.training-studio..mongodb"
   dbUserName : "dbUserName"
-  dbPassword : "dbPassword1111111111011"
+  dbPassword : "dbPassword11111111110111"
 
 image:
   repository: sannrao/demo-devops-app

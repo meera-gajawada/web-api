@@ -13,7 +13,6 @@ image:
   tag: ""
   buildIdRef : grefBuildId
 
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
